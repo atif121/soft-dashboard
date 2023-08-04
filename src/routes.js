@@ -54,8 +54,18 @@ import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
+import Home from "layouts/home";
 
 const routes = [
+  {
+    type: "collapse",
+    name: "Home",
+    key: "home",
+    route: "/",
+    icon: <Shop size="12px" />,
+    component: <Home />,
+    noCollapse: true,
+  },
   {
     type: "collapse",
     name: "Dashboard",
